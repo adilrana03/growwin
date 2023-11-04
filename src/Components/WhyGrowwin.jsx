@@ -2,18 +2,19 @@ import './WhyGrowwin.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Png1 from '../assets/Png1.png';
-import Png2 from '../assets/pngwing2.png';
-import Png3 from '../assets/pngwing3.png';
-import Png4 from '../assets/pngwing4.png';
+import Png1 from '../assets/Png5.png';
+import Png2 from '../assets/png6.png';
+import Png3 from '../assets/png3.png';
+import Png4 from '../assets/png10.png';
+// import v1 from '../assets/v1.mp4';
 
 
 const CarouselCard = ({ icon, text }) => {
     return (
-        <div className='carousel-container  my-2  rounded-2xl  '>
-            <div className="carousel-card shadow-2xl  border-2">
-                <img className="icon mx-auto " src={icon} alt="" />
-                <p className="text">{text}</p>
+        <div className='carousel-container  my-2  rounded-2xl bg-gradient-to-r from-red-100 via-red-100 to-white '>
+            <div className="carousel-card  align-middle ">
+                <img className=" mx-auto md:w-[20%] mb-5 " src={icon} alt="" />
+                <p className="text md:font-bold font-thin lg:w-[60%] mx-auto  ">{text}</p>
             </div>
         </div>
     );
@@ -51,6 +52,7 @@ const WhyGrowwin = () => {
 
     return (
         <>
+            
             <h1 className='text-5xl font-kalam font-bold text-center text-gray-600 mb-10'>Why Growwin ?</h1>
             <Slider {...settings}>
                 {data.map((item, index) => (

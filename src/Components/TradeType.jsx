@@ -1,12 +1,12 @@
 import React from 'react';
 
 const TradeType = ({ icon, title, description }) => (
-    <div className="lg:flex lg:flex-col lg:items-center md:p-8 mx-auto py-20 items-center text-center ">
-        <div className="mb-4 w-[20%] md:w-[40%] items-cente ">
+    <div className="lg:flex lg:flex-col lg:items-center md:p-8 mx-auto lg:py-20 py-4 items-center text-center ">
+        <div className="mb-4 w-[30%] md:w-[40%] items-center mx-auto">
             <img src={icon} alt={title} className='items-center '/>
         </div>
         <h3 className="text-xl mb-2 text-gray-50 font-bold mx-auto">{title}</h3>
-        <p className="text-center mb-4 text-gray-50 pb-10  ">{description}</p>
+        <p className="text-center mb-4 text-gray-50 lg:pb-10  ">{description}</p>
         <a href="#" className="text-blue-300 hover:underline underline">Learn more </a>
     </div>
 );
