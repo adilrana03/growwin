@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="bg-white  flex justify-around  py-2 pt-5 top-0  fixed  w-full z-20 ">
+        <div className="bg-gray-100  flex justify-around  py-2 pt-5 top-0  fixed  w-full z-20 ">
             <a className='flex gap-3'  >
                 {/* <img src={logo} alt="" className='h-10 w-10 rounded-full shadow-lg shadow-blue-400 items-center justify-center'/> */}
             <a href='/' className="text-red-500 text-xl font-bold">Growwin</a>

@@ -45,19 +45,19 @@ function Platforms() {
             <h1 className="text-5xl font-sans text-gray-600 font-bold mb-6">Our platforms</h1>
             <h2 className="text-xl mb-10 font-sans text-gray-700">Choose from 8 powerful platforms — designed with you in mind</h2>
 
-            <div className="md:flex md:gap-10 lg:justify-between">
-                <div className="md:w-[45%] p-4 h-[480px]   rounded-2xl overflow-x-scrol overflow-hidden " ref={scrollRef}>
+            <div className="md:flex md:gap-10 lg:justify-between flex flex-col-reverse md:flex-row">
+                <div className="md:w-[45%] p-4 lg:h-[480px] h-[280px] overflow-scroll  rounded-2xl   md:overflow-hidden " ref={scrollRef}>
                     {platforms.map((platform, index) => (
                         <div key={index} className="mb-4  ">
                             <div className="flex  text-left  ">
-                                <div className={` ${selectedImage === platform.img ? 'bg-white p-6 text-gray-700 shadow-lg scale-100  rounded-2xl w-[100%] transition duration-300 ease-in-out border-b-4 border-red-600' : 'opacity-40  hover:opacity-80 '} `}>
+                                <div className={` ${selectedImage === platform.img ? 'bg-white p-6 text-gray-700 shadow-lg scale-100   rounded-2xl w-[100%] transition duration-300 ease-in-out border-b-4 border-red-600' : 'opacity-40  hover:opacity-80 '} `}>
                                     <button
                                         onClick={() => setSelectedImage(platform.img)}
                                         className={``}
                                     >
                                         <h3 className="text-xl font-bold text-left">{platform.name}</h3>
                                     </button>
-                                    <p className=' text-xs text-gray-600 text-left font-sans leading-6 mt-4'>{platform.desc}</p>
+                                    <p className=' text-xs text-gray-600 text-left font-sans leading-6 mt-4 hidden md:block'>{platform.desc}</p>
                                     <div className="mt-4">
                                         <a href="#" className="text-red-500">Learn more &gt;</a>
                                     </div>

@@ -11,10 +11,10 @@ import Png4 from '../assets/png10.png';
 
 const CarouselCard = ({ icon, text }) => {
     return (
-        <div className='carousel-container  my-2  rounded-2xl bg-gradient-to-r from-red-100 to-white '>
+        <div className='carousel-container  my-2  rounded-2xl bg-gradient-to-r from-red-100 via-red-100 to-white '>
             <div className="carousel-card   ">
                 <p className="text font-bold ">{text}</p>
-                <img className="icon mx-auto " src={icon} alt="" />
+                <img className=" mx-auto md:w-[30%] " src={icon} alt="" />
             </div>
         </div>
     );

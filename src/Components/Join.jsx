@@ -2,19 +2,19 @@ import React from 'react';
 
 const SignupComponent = () => {
     return (
-        <div className="md:flex mx-auto  bg-red-500 p-12 h-[400px] py-20 mt-20 mb-40 w-[85%] rounded-2xl">
+        <div className="md:flex mx-auto  bg-red-500 lg:p-12 p-6 lg:h-[400px] h-[500px] lg:py-20 mt-20 mb-40 md:w-[85%] w-[95%]  rounded-2xl">
             <div className=" lg:flex flex-col justify-center lg:h-[400px] lg:p-12 p-5 lg:w-[40%] bg-white rounded-lg border ">
                 <h2 className="text-3xl font-bold mb-4 ">Join over 2.5 million traders worldwide</h2>
-                <p className="text-lg mb-6 ">Sign up for your demo account now.</p>
+                <p className="text-lg lg:mb-6 mb-2 ">Sign up for your demo account now.</p>
                 <input
                     type="email"
                     placeholder="Email address"
-                    className="mb-4 p-2 border rounded-xl wl"
+                    className="lg:mb-4 mb-2 p-2 border rounded-xl wl"
                 />
-                <button className="mb-4 p-2 bg-pink-500 text-white rounded-lg ">
+                <button className="lg:mb-4 mb-2 p-2 bg-pink-500 text-white rounded-lg ">
                     Sign up
                 </button>
-                <div className="mb-4 flex items-center">
+                <div className="lg:mb-4 mb-2 flex items-center">
                     <input type="checkbox" className="mr-2" />
                     <label>I agree to the terms and conditions.</label>
                 </div>

@@ -83,21 +83,20 @@ function Hero() {
     return (
         <div className="w-full h-screen pt-16 ">
 
-            <div className=" lg:flex justify-between mt-16 overflow-hidden">
-                <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-12  bg-white ">
-
-                    <h1 className="text-5xl leading-relaxed mb-4 text-left ">One broker, <br /> countless trading <br /> opportunities</h1>
+            <div className=" lg:flex justify-between lg:mt-16 overflow-hidden">
+                <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-12  bg-white p-4 ">
+                    <h1 className="text-5xl lg:leading-relaxed leading-snug mb-4 text-left ">One broker, <br /> countless trading <br /> opportunities</h1>
                     <p className="mb-6 text-2xl font-semibold font-ubuntu ">Get the widest range of markets, trades and platforms</p>
                     <h1 className="lg:text-5xl text-3xl font-bold leading-relaxed ">
                         {visibleText}
                         <span className="animate-blink">.</span>
                     </h1>
                     <div className=" justify-center  mt-8">
-                        <h1 className='text-2xl text-red-400 border p-2 border-red-200 rounded-2xl w-[30%]  text-center'>
+                        <h1 className='text-2xl text-red-400 border p-2 border-red-200 rounded-2xl lg:w-[30%] w-[90%] mx-auto md:ml-0  text-center'>
                             Download App
                         </h1>
 
-                        <div className='flex gap-4  border w-[20%] mt-4 rounded-2xl '>
+                        <div className='flex gap-4  lg:w-[20%] mt-4 rounded-2xl w-[50%] mx-auto md:ml-0'>
 
                             <a
                                 href="https://www.apple.com/app-store/"
@@ -129,8 +128,8 @@ function Hero() {
                     {/* <button className="bg-red-500 text-white px-6 py-4 mt-8 rounded-xl">Create free demo account</button> */}
                 </div>
 
-                <div className="relative lg:w-[60%]  lg:-mt-10 items-end justify-end -mr-40 overflow-hidden h-[600px]">
-                    <div className="absolute left-0 w-full lg:h-[1550px] h-[400px] transform lg:-skew-x-12  -z-10 bg-red-500 "></div>
+                <div className="relative lg:w-[60%]  lg:-mt-10 items-end justify-end -mr-40 overflow-hidden h-[500px] p-4">
+                    <div className="absolute left-0 w-full  lg:h-[1550px] h-[400px] transform lg:-skew-x-12  -z-10 bg-red-500 "></div>
                     <img src={images[currentImageIndex]} alt="Dynamic Image" className="lg:w-[80%] w-[60%] rounded-lg pt-10 relative z-10 " />
                 </div>
             </div>
