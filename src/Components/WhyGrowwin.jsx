@@ -12,9 +12,9 @@ import Png4 from '../assets/png10.png';
 const CarouselCard = ({ icon, text }) => {
     return (
         <div className='carousel-container  my-2  rounded-2xl bg-gradient-to-r from-red-100 via-red-100 to-white '>
-            <div className="carousel-card   ">
-                <p className="text font-bold ">{text}</p>
-                <img className=" mx-auto md:w-[30%] " src={icon} alt="" />
+            <div className="carousel-card  align-middle ">
+                <img className=" mx-auto md:w-[20%] mb-5 " src={icon} alt="" />
+                <p className="text md:font-bold font-thin lg:w-[60%] mx-auto  ">{text}</p>
             </div>
         </div>
     );

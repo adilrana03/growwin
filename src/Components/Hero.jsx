@@ -4,20 +4,24 @@ import hero from '../assets/hero_1.png';
 import hero2 from '../assets/hero_2.png';
 import hero3 from '../assets/hero_3.png';
 import png2 from '../assets/png2.png';
-import png3 from '../assets/png3.png';
+import png3 from '../assets/png17.png';
 import png4 from '../assets/png4.png';
 import png5 from '../assets/png5.png';
 import png6 from '../assets/png6.png';
 import png7 from '../assets/png7.png';
 import png8 from '../assets/png8.png';
 import png10 from '../assets/png10.png';
-import png11 from '../assets/png11.png';
+import png11 from '../assets/png18.png';
 import png12 from '../assets/png12.png';
 import png13 from '../assets/png13.png';
-import png14 from '../assets/png14.png';
+import png14 from '../assets/png16.png';
 import png15 from '../assets/png15.png';
-// import v1 from '../assets/v1.mp4';
 
+import insta from '../assets/Instagram.png'
+import facebook from '../assets/facebook.png'
+import twitter from '../assets/twitter.png'
+import apple from '../assets/apple.png'
+import telegram from '../assets/telegram.png'
 
 
 function Hero() {
@@ -83,20 +87,29 @@ function Hero() {
     return (
         <div className="w-full h-screen pt-16 ">
 
-            <div className=" lg:flex justify-between lg:mt-16 overflow-hidden">
-                <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-12  bg-white p-4 ">
-                    <h1 className="text-5xl lg:leading-relaxed leading-snug mb-4 text-left ">One broker, <br /> countless trading <br /> opportunities</h1>
-                    <p className="mb-6 text-2xl font-semibold font-ubuntu ">Get the widest range of markets, trades and platforms</p>
+            <div className=" lg:flex justify-between lg:mt-16 overflow-hidde">
+                <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-16  bg-white p-4 lg:-mt-10">
+                    <h1 className="md:text-5xl text-4xl lg:leading-relaxed leading-snug mb-4 text-left font-sans font-ubuntu w-full lg:w-[60%]">
+                        Powerfull Platform,  for Forex trading  with AI </h1>
+                    <p className="mb-6 lg:text-2xl text-lg   font-ubuntu ">Get the widest range of markets, trades and platforms</p>
                     <h1 className="lg:text-5xl text-3xl font-bold leading-relaxed ">
                         {visibleText}
                         <span className="animate-blink">.</span>
                     </h1>
                     <div className=" justify-center  mt-8">
-                        <h1 className='text-2xl text-red-400 border p-2 border-red-200 rounded-2xl lg:w-[30%] w-[90%] mx-auto md:ml-0  text-center'>
-                            Download App
-                        </h1>
+                        <button className='text-2xl bg-red-500 border p-3  text-white rounded-xl lg:w-[50%]  lg:mt-4 w-[90%] mx-auto md:ml-0  text-center'>
+                            Create Demo account
+                        </button>
+                        <div class="md:flex mt-8 space-x-10 md:ml-5 mb-4 md:w-[50%] hidden">
+                            <a href=""><img src={insta} className='h-8 w-8' alt="" /></a>
+                            <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a>
+                            <a href=""><img src={twitter} className='h-8 w-8' alt="" /></a>
+                            {/* <a href=""><img src={apple} className='h-8 w-8' alt="" /></a> */}
+                            <a href=""><img src={telegram} className='h-8 w-8' alt="" /></a>
 
-                        <div className='flex gap-4  lg:w-[20%] mt-4 rounded-2xl w-[50%] mx-auto md:ml-0'>
+                        </div>
+
+                        {/* <div className='flex gap-4  lg:w-[20%] mt-4 rounded-2xl w-[50%] mx-auto md:ml-0'>
 
                             <a
                                 href="https://www.apple.com/app-store/"
@@ -122,15 +135,15 @@ function Hero() {
                                     className="h-12 md:h-10"
                                 />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* <button className="bg-red-500 text-white px-6 py-4 mt-8 rounded-xl">Create free demo account</button> */}
                 </div>
 
-                <div className="relative lg:w-[60%]  lg:-mt-10 items-end justify-end -mr-40 overflow-hidden h-[500px] p-4">
-                    <div className="absolute left-0 w-full  lg:h-[1550px] h-[400px] transform lg:-skew-x-12  -z-10 bg-red-500 "></div>
-                    <img src={images[currentImageIndex]} alt="Dynamic Image" className="lg:w-[80%] w-[60%] rounded-lg pt-10 relative z-10 " />
+                <div className="relative lg:w-[55%]  lg:-mt-16 items-end justify-end lg:-mr-40 overflow-hidde h-[500px] p-4">
+                    <div className="absolute left-0 w-full  lg:h-[650px] h-[400px] transform lg:-skew-x-12  -z-1 bg-red-500 "></div>
+                    <img src={images[currentImageIndex]} alt="Dynamic Image" className="lg:w-[70%] w-[95%] rounded-lg items-center pt-10 relative z-10 " />
                 </div>
             </div>
         </div>

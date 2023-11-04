@@ -21,7 +21,7 @@ function AIBotFeature() {
                     </button>
                 </div>
                 <div className="lg:w-1/2 flex justify-center lg:justify-end">
-                    <img src={aiBotImageSrc} alt="AI Bot" className="w-full lg:w-[80%] h-auto object-cover rounded-xl shadow-x transition-transform duration-500 hover:scale-115" />
+                    <img src={aiBotImageSrc} alt="AI Bot" className="w-full lg:w-[60%] h-auto object-cover rounded-xl shadow-x transition-transform duration-500 hover:scale-115" />
                 </div>
             </div>
         </div>

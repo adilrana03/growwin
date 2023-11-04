@@ -46,7 +46,7 @@ function Platforms() {
             <h2 className="text-xl mb-10 font-sans text-gray-700">Choose from 8 powerful platforms — designed with you in mind</h2>
 
             <div className="md:flex md:gap-10 lg:justify-between flex flex-col-reverse md:flex-row">
-                <div className="md:w-[45%] p-4 lg:h-[480px] h-[280px] overflow-scroll  rounded-2xl   md:overflow-hidden " ref={scrollRef}>
+                <div className="md:w-[45%] p-4 lg:h-[480px] h-[280px] overflow-scroll  rounded-2xl   md:overflow-hidden  " ref={scrollRef}>
                     {platforms.map((platform, index) => (
                         <div key={index} className="mb-4  ">
                             <div className="flex  text-left  ">
@@ -55,7 +55,7 @@ function Platforms() {
                                         onClick={() => setSelectedImage(platform.img)}
                                         className={``}
                                     >
-                                        <h3 className="text-xl font-bold text-left">{platform.name}</h3>
+                                        <h3 className="text-xl font-bold text-left ">{platform.name}</h3>
                                     </button>
                                     <p className=' text-xs text-gray-600 text-left font-sans leading-6 mt-4 hidden md:block'>{platform.desc}</p>
                                     <div className="mt-4">

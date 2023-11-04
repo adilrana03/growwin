@@ -30,9 +30,9 @@ function ForexTrading() {
     ];
     const getData = () => {
         switch (selectedTab) {
-            case 'Derived indices':
+            case 'Indices':
                 return derivedIndicesData;
-            case 'Stocks & indices':
+            case 'Stocks':
                 return stocksIndicesData;
             case 'Forex':
             default:
@@ -40,8 +40,8 @@ function ForexTrading() {
         }
     };
     return (
-        <div className="lg:p-8 lg:w-[80%] w-[95%] mx-auto pb-20 bg-gray-50 rounded-2xl  md:my-0 mt-60 p-[2px]">
-            <div className="md:flex lg:justify-around mb-4 lg:text-2xl border-b pb-2 text-gray-400 p-4 flex overflow-scroll gap-10">
+        <div className="lg:p-8 lg:w-[80%] w-[95%] mx-auto pb-20 bg-gray-50 rounded-2xl  md:my-0 mt-20 p-[2px]">
+            <div className="md:flex lg:justify-around mb-4 lg:text-2xl text-xl border-b pb-2 text-gray-400 p-4 flex overflow-scroll gap-10">
                 <button className={selectedTab === 'Forex' ? 'text-red-500 border-b-2 border-red-500 ' : '' } onClick={() => setSelectedTab('Forex')}>
                     <h1>Forex</h1></button>
                 <button className={selectedTab === 'Indices' ? 'text-red-500 border-b-2 border-red-500' : ''  } onClick={() => setSelectedTab('Indices')}>
@@ -63,12 +63,12 @@ function ForexTrading() {
 
             <table className="lg:w-full text-left  md:my-0">
                 <thead>
-                    <tr className="border-b flex justify-around bg-gray-100 p-4  rounded-t-2xl">
-                        <th className="pb-2 text-left text-xs mr-[2px] ">Instrument</th>
-                        <th className="pb-2 text-left text-xs mr-[2px] ">Bid price</th>
-                        <th className="pb-2 text-left text-xs mr-[2px] ">Ask price</th>
-                        <th className="pb-2 text-left text-xs mr-[2px] ">Spread</th>
-                        <th className="pb-2 text-left text-xs mr-[2px] ">Daily % change</th>
+                    <tr className="border-b flex justify-around bg-gray-100 p-4 px-2  rounded-t-2xl">
+                        <th className="pb-2 text-left text-xs mr-1 ">Instrument</th>
+                        <th className="pb-2 text-left text-xs mr-1 ">Bid price</th>
+                        <th className="pb-2 text-left text-xs mr-1 ">Ask price</th>
+                        <th className="pb-2 text-left text-xs mr-1 ">Spread</th>
+                        <th className="pb-2 text-left text-xs mr-1 ">Daily % change</th>
                     </tr>
                 </thead>
                 <tbody>
