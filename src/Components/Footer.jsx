@@ -8,7 +8,7 @@ import apple2 from '../assets/apple2.png'
 
 const Footer = () => {
     return (
-        <div className='pb-20'>
+        <div className='pb-20 md:pb-0'>
             <footer class="bg-white p-12 border-t border-gray-200">
                 <div class="container mx-auto">
 

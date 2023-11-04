@@ -1,4 +1,6 @@
 import React from 'react';
+// import logo from '../assets/logo.jpeg'
+// import { Link } from 'react-router-dom';
 
 import google from '../assets/game.png'
 import appstore from '../assets/app-store.png'
@@ -72,12 +74,10 @@ function Header() {
                     </a>
                 </div>
             </div>
+
             <div className="md:hidden fixed bottom-0 w-full bg-white z-30">
                 <nav className="flex justify-around items-center p-4">
-                    {/* Home Icon */}
-                 
-
-                    {/* About Us Icon */}
+               
                     <a href="#about" className="flex flex-col items-center">
                         <img src={group} className='h-6 w-6' alt="" />
 
@@ -103,6 +103,7 @@ function Header() {
                     </a>
                 </nav>
             </div>
+
         </>
     );
 }
