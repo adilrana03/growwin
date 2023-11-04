@@ -17,7 +17,7 @@ import png13 from '../assets/png13.png';
 import png14 from '../assets/png16.png';
 import png15 from '../assets/png15.png';
 
-import insta from '../assets/Instagram.png'
+import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
 import apple from '../assets/apple.png'
