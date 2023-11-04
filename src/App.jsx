@@ -11,13 +11,13 @@ function App() {
 
   return (
     <div className='w-full overflow-hidden'>
-    <BrowserRouter>
-      <ClickToComponent />
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='login' element={<AuthForm/>}/>
-      </Routes>
+      <BrowserRouter>
+        <ClickToComponent />
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<AuthForm />} />
+        </Routes>
       </BrowserRouter>
     </div>
 
