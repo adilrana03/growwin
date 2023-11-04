@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="bg-white  flex justify-around  py-2 pt-5 top-0  fixed  w-full z-20 ">
             <a className='flex gap-3'  >
-                <img src={logo} alt="" className='h-10 w-10 rounded-full shadow-lg shadow-blue-400 items-center justify-center'/>
+                {/* <img src={logo} alt="" className='h-10 w-10 rounded-full shadow-lg shadow-blue-400 items-center justify-center'/> */}
             <a href='/' className="text-red-500 text-xl font-bold">Growwin</a>
             </a>
             <div className="space-x-4 hidden md:block">
@@ -15,7 +15,7 @@ function Header() {
                 <a href="#" className="text-gray-600 hover:text-red-500">Resources</a>
             </div>
             <div className="space-x-4 flex">
-                <a href='/login' className="text-red-500 border-2 border-red-500 bg-white px-4 py-1 rounded-2xl hover:bg-red-100">Log in</a>
+                <a href='/growwin.vercel.app/login' className="text-red-500 border-2 border-red-500 bg-white px-4 py-1 rounded-2xl hover:bg-red-100">Log in</a>
                 <button className=" bg-red-500 px-4 py-1 rounded-2xl hover:bg-red-500 text-white hidden md:block">Create free demo account</button>
                 <div className=" py-1 rounded-full font-bold">EN</div>
             </div>
