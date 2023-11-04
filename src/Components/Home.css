@@ -1,0 +1,45 @@
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+.animate-blink {
+    animation: blink-animation 1s infinite;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes blink-animation {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.typing-effect::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: blink 1s step-end infinite;
+}
