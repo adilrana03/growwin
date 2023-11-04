@@ -1,4 +1,4 @@
-import aiBotImageSrc from '../assets/pngwing5.png';
+import aiBotImageSrc from '../assets/png13.png';
 // AI Bot Feature Section Component
 function AIBotFeature() {
     return (

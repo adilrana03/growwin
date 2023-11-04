@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import exchange from '../assets/exchange.png'
 function ForexTrading() {
     const [selectedTab, setSelectedTab] = useState('Forex');
 
@@ -40,11 +40,11 @@ function ForexTrading() {
         }
     };
     return (
-        <div className="lg:p-8 w-[80%] mx-auto pb-20 bg-gray-50 rounded-2xl">
+        <div className="lg:p-8 w-[80%] mx-auto pb-20 bg-gray-50 rounded-2xl my-40 md:my-0">
             <div className="md:flex justify-around mb-4 text-2xl border-b pb-2 text-gray-400 p-4 hidden ">
                 <button className={selectedTab === 'Forex' ? 'text-red-500 border-b-2 border-red-500' : ''} onClick={() => setSelectedTab('Forex')}>
-                    <div className='text-center justify-center '>
-                        {/* <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4yOTk4IDQuNjg3MTNINi4wMDk3N0M0LjkwNDc3IDQuNjg3MTMgNC4wMDk3NyA1LjU4MjEzIDQuMDA5NzcgNi42ODcxM1YxOS4xMjcxQzQuMDA5NzcgMTkuNjc3MSA0LjQ1OTc3IDIwLjEyNzEgNS4wMDk3NyAyMC4xMjcxSDYuMDk5NzdDNi42NDk3NyAyMC4xMjcxIDcuMDk5NzcgMTkuNjc3MSA3LjA5OTc3IDE5LjEyNzFWMTMuOTUyMUgxMC4yMTQ4QzEwLjc2NDggMTMuOTUyMSAxMS4yMTQ4IDEzLjUwMjEgMTEuMjE0OCAxMi45NTIxVjExLjg2MjFDMTEuMjE0OCAxMS4zMTIxIDEwLjc2NDggMTAuODYyMSAxMC4yMTQ4IDEwLjg2MjFINy4wOTk3N1Y3Ljc3MjEzSDEzLjMwNDhDMTMuODU0OCA3Ljc3MjEzIDE0LjMwNDggNy4zMjIxMyAxNC4zMDQ4IDYuNzcyMTNWNS42ODIxM0MxNC4zMDQ4IDUuMTMyMTMgMTMuODU0OCA0LjY4MjEzIDEzLjMwNDggNC42ODIxM0wxMy4yOTk4IDQuNjg3MTNaIiBzdHJva2U9IiNGRjQ0NEYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjM5NSAyMC4xMjY5SDE1LjcwNUMxNi4wOCAyMC4xMjY5IDE2LjQyIDE5LjkxNjkgMTYuNTkgMTkuNTg2OUwxNy4wODUgMTguNjMxOUwxNy41OCAxOS41ODY5QzE3Ljc1IDE5LjkxNjkgMTguMDk1IDIwLjEyNjkgMTguNDY1IDIwLjEyNjlIMTkuNzc1QzIwLjUyNSAyMC4xMjY5IDIxLjAxIDE5LjMzMTkgMjAuNjYgMTguNjY2OUwxOC44NiAxNS4yMDE5TDIwLjg5IDExLjI5NjlDMjEuMjM1IDEwLjYzMTkgMjAuNzU1IDkuODM2OTEgMjAuMDA1IDkuODM2OTFIMTguNjk1QzE4LjMyIDkuODM2OTEgMTcuOTggMTAuMDQ2OSAxNy44MSAxMC4zNzY5TDE3LjA4NSAxMS43NzE5TDE2LjM2IDEwLjM3NjlDMTYuMTkgMTAuMDQ2OSAxNS44NDUgOS44MzY5MSAxNS40NzUgOS44MzY5MUgxNC4xNjVDMTMuNDE1IDkuODM2OTEgMTIuOTMgMTAuNjMxOSAxMy4yOCAxMS4yOTY5TDE1LjMxIDE1LjIwMTlMMTMuNTEgMTguNjY2OUMxMy4xNjUgMTkuMzMxOSAxMy42NDUgMjAuMTI2OSAxNC4zOTUgMjAuMTI2OVoiIHN0cm9rZT0iI0ZGNDQ0RiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=#forex" alt="" />  */}
+                    <div className=' '>
+                        {/*<img src={exchange} alt="" className='h-8 w-8' /> */}
                         <h1>Forex</h1>
                     </div>
                 </button>
@@ -62,14 +62,14 @@ function ForexTrading() {
                     Commodities</button>
             </div>
 
-            <p className="mt-4 mb-6 text-center py-3 text-sm">
+            <p className="mt-4 mb-6 text-center py-3 text-sm hidden md:block">
                 Benefit from round-the-clock trading hours (Monday to Friday), high liquidity, low barriers to entry, a wide range of offerings, and opportunities to trade on world events.
             </p>
 
 
 
 
-            <table className="w-full text-left ">
+            <table className="lg:w-full text-left my-40 md:my-0">
                 <thead>
                     <tr className="border-b flex justify-around bg-gray-100 p-4  rounded-t-2xl">
                         <th className="pb-2 text-left">Instrument</th>
