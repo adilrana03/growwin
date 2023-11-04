@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.jpeg'
+// import logo from '../assets/logo.jpeg'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -15,7 +16,7 @@ function Header() {
                 <a href="#" className="text-gray-600 hover:text-red-500">Resources</a>
             </div>
             <div className="space-x-4 flex">
-                <a href='/growwin.vercel.app/login' className="text-red-500 border-2 border-red-500 bg-white px-4 py-1 rounded-2xl hover:bg-red-100">Log in</a>
+                <a href='/login' className="text-red-500 border-2 border-red-500 bg-white px-4 py-1 rounded-2xl hover:bg-red-100">Log in</a>
                 <button className=" bg-red-500 px-4 py-1 rounded-2xl hover:bg-red-500 text-white hidden md:block">Create free demo account</button>
                 <div className=" py-1 rounded-full font-bold">EN</div>
             </div>
