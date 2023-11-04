@@ -10,7 +10,7 @@ import Home from './Components/Home'
 function App() {
 
   return (
-    <>
+    <div className='w-full overflow-hidden'>
     <BrowserRouter>
       <ClickToComponent />
       <Header />
@@ -19,7 +19,7 @@ function App() {
         <Route path='login' element={<AuthForm/>}/>
       </Routes>
       </BrowserRouter>
-    </>
+    </div>
 
   )
 }

@@ -67,7 +67,7 @@ function Hero() {
     return (
         <div className="w-full h-screen pt-16 ">
 
-            <div className=" lg:flex justify-between mt-16">
+            <div className=" lg:flex justify-between mt-16 overflow-hidden">
                 <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-12  bg-white ">
                     <h1 className="text-5xl leading-relaxed mb-4 text-left ">One broker, <br /> countless trading <br /> opportunities</h1>
                     <p className="mb-6 text-2xl font-semibold font-ubuntu ">Get the widest range of markets, trades and platforms</p>
@@ -79,7 +79,7 @@ function Hero() {
                      <button className="bg-red-500 text-white px-6 py-4 mt-8 rounded-xl">Create free demo account</button>
                 </div>
 
-                <div className="relative lg:w-[60%]  -mt-10 items-end justify-end lg:-mr-40 overflow-hidden h-[600px]">
+                <div className="relative lg:w-[60%]  -mt-10 items-end justify-end -mr-40 overflow-hidden h-[600px]">
                     <div className="absolute left-0 w-full h-[1550px] transform -skew-x-12  -z-10 bg-red-500"></div>
                     <img src={images[currentImageIndex]} alt="Dynamic Image" className="w-[80%] rounded-lg pt-10 relative z-10 " />
                 </div>
