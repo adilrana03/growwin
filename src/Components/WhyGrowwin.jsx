@@ -2,7 +2,7 @@ import './WhyGrowwin.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Png1 from '../assets/Png5.png';
+import Png1 from '../assets/png5.png';
 import Png2 from '../assets/png6.png';
 import Png3 from '../assets/png3.png';
 import Png4 from '../assets/png10.png';
