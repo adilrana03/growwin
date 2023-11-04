@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/login' element={<AuthForm />} />
+          <Route path='/growwin.vercel.app/login' element={<AuthForm />} />
         </Routes>
       </BrowserRouter>
     </div>

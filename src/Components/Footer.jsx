@@ -14,7 +14,7 @@ const Footer = () => {
                         </div>
                         <div>
 
-                            <img src={logo} alt="Deriv Logo" class="w-20 mx-auto mb-4 rounded-2xl shadow-2xl shadow-blue-400" />
+                            {/* <img src={logo} alt="Deriv Logo" class="w-20 mx-auto mb-4 rounded-2xl shadow-2xl shadow-blue-400" /> */}
                         </div>
                     </div>
 
