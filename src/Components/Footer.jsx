@@ -7,8 +7,15 @@ const Footer = () => {
                 <div class="container mx-auto">
 
                     {/* <!-- Logo --> */}
-                    <div class="mb-10 text-center">
-                        <img src={logo} alt="Deriv Logo" class="w-32 mx-auto mb-4 rounded-2xl shadow-2xl shadow-blue-400" />
+                    <div class="mb-10 text-center flex justify-between gap-5 items-center">
+                        <div>
+
+                            <h1 className='font-sans text-6xl text-red-400'>Growwin</h1>
+                        </div>
+                        <div>
+
+                            <img src={logo} alt="Deriv Logo" class="w-20 mx-auto mb-4 rounded-2xl shadow-2xl shadow-blue-400" />
+                        </div>
                     </div>
 
                     {/* <!-- Main Footer Sections --> */}
@@ -68,7 +75,7 @@ const Footer = () => {
                         </div>
 
 
-                                {/* <!-- ... Other items ... --> */}
+                        {/* <!-- ... Other items ... --> */}
                         <div>
                             <h4 class="font-bold mb-4">Partners</h4>
                             <ul class="space-y-2">
