@@ -2,11 +2,11 @@ import React from 'react';
 
 const SignupComponent = () => {
     return (
-        <div className="md:flex mx-auto  bg-red-500 lg:p-12 p-6 lg:h-[400px] h-[500px] lg:py-20 mt-20 mb-40 md:w-[85%] w-[95%]  rounded-2xl">
-            <div className=" lg:flex flex-col justify-center lg:h-[400px] lg:p-12 p-5 lg:w-[40%] bg-white rounded-xl border ">
+        <div className="md:flex mx-auto  bg-red-500 lg:p-12 p-2 lg:h-[400px] h-[400px]  lg:py-20 mt-20 mb-40 md:w-[85%] w-[95%]  rounded-2xl">
+            <div className=" lg:flex flex-col justify-center lg:h-[400px] lg:p-12 p-5 mt-10 md:mt-0 lg:w-[40%] bg-white rounded-xl border ">
                 <h2 className="text-3xl font-bold mb-4 ">Join over millions traders worldwide</h2>
 
-                <h1 className='text-3xl font-medium mb-4'>Download our App <br /> and Join us today</h1>
+                <h1 className='lg:text-3xl font-medium mb-4 text-2xl leading-relaxed'>Download our App <br /> and Join us today</h1>
                 {/* <p className="text-lg lg:mb-6 mb-2 ">Sign up for your demo account now.</p> */}
                 {/* <input
                     type="email"
@@ -20,8 +20,8 @@ const SignupComponent = () => {
                     <input type="checkbox" className="mr-2" />
                     <label>I agree to the terms and conditions.</label>
                 </div> */}
-                <div className="md:flex justify-between mt-5 ">
-                    <button className="flex items-center p-2 border  rounded-xl">
+                <div className="flex justify-between mt-5 gap-2">
+                    <button className="flex items-center p-2  border  rounded-xl ">
                         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjU0NjkgMTIuMjAxM0MyMS41NDY5IDExLjUxNzkgMjEuNDg1MyAxMC44MzQ0IDIxLjM2NzYgMTAuMTYyMUgxMS45NzI3VjE0LjAxNjVIMTcuMzM5NkMxNy4xMTU1IDE1LjI0ODkgMTYuMzk4NCAxNi4zMzU4IDE1LjM1MDggMTcuMDI0OUwxOC41NzIxIDE5LjUyOTFDMjAuNDYwMSAxNy43OTI0IDIxLjU0NjkgMTUuMjM3NyAyMS41NDY5IDEyLjIwMTNaIiBmaWxsPSIjM0U4MkYxIi8+CjxwYXRoIGQ9Ik0xNS4zNDk5IDE3LjAyNDlDMTQuNDU5MiAxNy42MjQzIDEzLjMxNjMgMTcuOTc3MyAxMS45NzE4IDE3Ljk3NzNDOS4zNzIzMiAxNy45NzczIDcuMTc2MjQgMTYuMjIzOCA2LjM5MTkzIDEzLjg2NTJMMy4wNTg1OSAxNi40NDc5QzQuNzUwNDcgMTkuODE0OCA4LjIwMTQ1IDIxLjk0MzcgMTEuOTcxOCAyMS45MzgxQzE0LjY2NjQgMjEuOTM4MSAxNi45MjQxIDIxLjA0NzMgMTguNTcxMiAxOS41MjM1TDE1LjM0OTkgMTcuMDI0OVoiIGZpbGw9IiMzMkE3NTMiLz4KPHBhdGggZD0iTTYuMzkyMTYgMTAuMDc4N0wzLjA1ODgyIDcuNDk2MDlDMS42NDcwNiAxMC4zMTQgMS42NDcwNiAxMy42MzYxIDMuMDU4ODIgMTYuNDU0MUw2LjM5MjE2IDEzLjg3MTRDNS45Nzc1OSAxMi42MzkgNS45Nzc1OSAxMS4zMDU2IDYuMzkyMTYgMTAuMDc4N1oiIGZpbGw9IiNGOUJCMDAiLz4KPHBhdGggZD0iTTExLjk3MTggMkM4LjIwMTQ1IDIgNC43NTA0NyA0LjEyODg1IDMuMDU4NTkgNy40OTU4TDYuMzkxOTMgMTAuMDc4NEM3LjE3NjI0IDcuNzE5ODkgOS4zNzIzMiA1Ljk2NjM5IDExLjk3MTggNS45NjYzOUMxMy40MzM5IDUuOTY2MzkgMTQuNzUwNSA2LjQ3MDU5IDE1Ljc4MTMgNy40NTY1OEwxOC42NDQgNC41OTM4NEMxNi45MTg1IDIuOTg1OTkgMTQuNjYwOCAyIDExLjk3MTggMloiIGZpbGw9IiNFNzQxMzMiLz4KPC9zdmc+Cg==" alt="Google" className="mr-2" />
                         Google
                     </button>

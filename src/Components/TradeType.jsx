@@ -7,7 +7,7 @@ const TradeType = ({ icon, title, description }) => (
         </div>
         <h3 className="text-xl mb-2 text-gray-50 font-bold mx-auto">{title}</h3>
         <p className="text-center mb-4 text-gray-50 lg:pb-10  ">{description}</p>
-        <a href="#" className="text-blue-300 hover:underline underline">Learn more </a>
+        {/* <a href="#" className="text-blue-300 hover:underline underline">Learn more </a> */}
     </div>
 );
 

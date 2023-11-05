@@ -1,22 +1,21 @@
 import React from 'react'
-import logo from '../assets/logo.jpeg'
+// import logo from '../assets/logo.jpeg'
 import insta from '../assets/Instagram.png'
 import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
-import apple from '../assets/apple.png'
-import apple2 from '../assets/apple2.png'
+import telegram from '../assets/telegram.png'
+// import apple2 from '../assets/apple2.png'
 
 const Footer = () => {
     return (
-        <div className='pb-20 md:pb-0'>
+        <div className=''>
             <footer class="bg-white p-12 border-t border-gray-200">
                 <div class="container mx-auto">
 
                     {/* <!-- Logo --> */}
                     <div class="mb-10 text-center flex justify-between gap-5 items-center">
                         <div>
-
-                            <h1 className='font-sans text-6xl text-red-400'>Growwin</h1>
+                            <h1 className='font-sans md:text-6xl text-2xl font-bold md:font-normal text-red-500'>Growwin</h1>
                         </div>
                         <div>
 
@@ -96,7 +95,7 @@ const Footer = () => {
                         <a href=""><img src={insta} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={twitter} className='h-8 w-8' alt="" /></a>
-                        <a href=""><img src={apple} className='h-8 w-8' alt="" /></a>
+                        <a href=""><img src={telegram} className='h-8 w-8' alt="" /></a>
                     </div>
 
                     {/* <!-- Disclaimer --> */}
