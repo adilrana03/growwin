@@ -89,7 +89,7 @@ function Header() {
                 </div>
                 <div className='md:flex gap-4 hidden'>
                     <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
-                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
+                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>                  
                 </div>
             </nav>
 
