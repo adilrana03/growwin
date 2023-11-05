@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import appstore from '../assets/apple2.png';
-import google from '../assets/game.png'
+import appstore from '../assets/app-store2.png';
+import google from '../assets/playstore2.png'
 
 function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -40,6 +40,12 @@ function Header() {
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">Trade</a>
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">Markets</a>
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">About Us</a>
+                    <div className='mt-4 px-4'>
+                        <a href=""> <button className='block my-3'><img className='h-8 bg-red-100' src={appstore} alt="" /></button></a>
+                        <a href=""> <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button></a>
+                    </div>
+
+
                 </div>
 
                 {/* Desktop Menu */}
@@ -82,8 +88,8 @@ function Header() {
                     </a> */}
                 </div>
                 <div className='md:flex gap-4 hidden'>
-                    <button className=''><img className='h-8 w-8' src={appstore} alt="" /></button>
-                    <button className=''><img className='h-7 w-7' src={google} alt="" /></button>                    
+                    <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
+                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
                 </div>
             </nav>
 

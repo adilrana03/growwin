@@ -16,9 +16,12 @@ function AIBotFeature() {
                         <li>Advanced trade execution</li>
                         <li>24/7 operation, maximizing opportunities</li>
                     </ul>
-                    <button className="bg-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-red-600">
+
+                    <a href="/comingsoon">
+                    <button className="bg-red-500 text-white font-bold py-3 mt-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-red-600">
                         Get Started
                     </button>
+                    </a>
                 </div>
                 <div className="lg:w-1/2 flex justify-center lg:justify-end">
                     <img src={aiBotImageSrc} alt="AI Bot" className="w-full lg:w-[60%] h-auto object-cover rounded-xl shadow-x transition-transform duration-500 hover:scale-115" />
