@@ -1,6 +1,12 @@
 // import React from 'react';
 
 import React, { useState,useEffect,useRef } from 'react';
+import trading1 from '../assets/trading1.avif';
+import trading2 from '../assets/trading2.avif';
+import trading3 from '../assets/trading3.avif';
+import trading4 from '../assets/trading4.avif';
+import trading5 from '../assets/trading5.avif';
+
 
 function Platforms() {
     const [selectedImage, setSelectedImage] = useState("https://deriv.com/static/d71b16a8ad2c2a1e36d554ac8e7f8a9b/0733a/platform_mt5.avif"); // default image
@@ -8,11 +14,11 @@ function Platforms() {
     const scrollRef = useRef(null);
 
     const platforms = [
-        { name: 'Deriv MT5', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/beb6883d50668199aadfbc44a8083d02/0733a/platform_deriv_go.avif" },
-        { name: 'Growwin Trader', desc: 'Our legacy custumor platform', img: "https://deriv.com/static/d71b16a8ad2c2a1e36d554ac8e7f8a9b/0733a/platform_mt5.avif" },
-        { name: 'SmartTrader', desc: 'Our classic bot builder and automated trading platformOur classic bot builder and automated trading platform', img: "https://deriv.com/static/4b8c994b61a757c506776cf6b1ce836c/0733a/platform_smart_trader.avif" },
-        { name: 'Binary Bot', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/9d6d77d26451c60b97048b5270db2789/bbb0d/platform_deriv_ctrader.avif" },
-        { name: 'Growwin cTrader', desc: 'Trade CFD on forex, commodities, cryptocurrencies.', img: "https://deriv.com/static/609e72762ab8c943d3865a762be33904/0733a/platform_binary_bot.avif" },
+        { name: 'Deriv MT5', desc: 'Our classic bot builder and automated trading platform', img: {trading1} },
+        { name: 'Growwin Trader', desc: 'Our legacy custumor platform', img:{trading2} },
+        { name: 'SmartTrader', desc: 'Our classic bot builder and automated trading platformOur classic bot builder and automated trading platform', img:{trading3 }},
+        { name: 'Binary Bot', desc: 'Our classic bot builder and automated trading platform', img:{trading4} },
+        { name: 'Growwin cTrader', desc: 'Trade CFD on forex, commodities, cryptocurrencies.', img: {trading5} },
     ];
 
     useEffect(() => {
