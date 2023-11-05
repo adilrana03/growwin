@@ -20,8 +20,9 @@ import png14 from '../assets/png16.png';
 import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
-// import apple from '../assets/apple.png'
 import telegram from '../assets/telegram.png'
+import appstore from '../assets/app-store2.png';
+import google from '../assets/playstore2.png'
 
 
 function Hero() {
@@ -100,6 +101,11 @@ function Hero() {
                         <button className='text-2xl font-semibold bg-red-500 border p-3 ml-3  text-white md:rounded-xl rounded-3xl lg:w-[50%]  lg:mt-4 w-[90%] mx-auto md:ml-0  text-center'>
                             Create Demo account
                         </button>
+                        <div className='mt-4 flex justify-center gap-3 md:hidden'>
+                            <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={appstore} alt="" /></button></a>
+                            <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={google} alt="" /></button></a>
+                        </div>
+
                         <div class="md:flex mt-8 space-x-10 md:ml-5 mb-4 md:w-[50%] hidden">
                             <a href=""><img src={insta} className='h-8 w-8' alt="" /></a>
                             <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a>

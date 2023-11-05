@@ -6,6 +6,7 @@ import AuthForm from './Components/Login'
 import { Route, Routes } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Home from './Components/Home'
+import ComingSoonPage from './Components/ComingSoon'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/comingsoon' element={<ComingSoonPage/>}/>
           <Route path='/login' element={<AuthForm />} />
         </Routes>
       </BrowserRouter>

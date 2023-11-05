@@ -4,8 +4,9 @@ import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
 import telegram from '../assets/telegram.png'
-// import apple2 from '../assets/apple2.png'
-
+// tore2.png';
+import appstore from '../assets/app-store2.png'
+import google from '../assets/playstore2.png'
 const Footer = () => {
     return (
         <div className=''>
@@ -81,7 +82,7 @@ const Footer = () => {
 
 
                         {/* <!-- ... Other items ... --> */}
-                        
+
                     </div>
 
                     {/* <!-- Legal Info & Disclaimer --> */}
@@ -96,6 +97,10 @@ const Footer = () => {
                         <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={twitter} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={telegram} className='h-8 w-8' alt="" /></a>
+                    </div>
+                    <div className='md:flex justify-center w-[50%] mx-auto gap-4 hidden mb-5'>
+                        <button className=' '><img className='h-8 bg-red-100 mx-auo' src={appstore} alt="" /></button>
+                        <button className=''><img className='h-8 bg-red-100 mx-auto' src={google} alt="" /></button>
                     </div>
 
                     {/* <!-- Disclaimer --> */}

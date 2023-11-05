@@ -53,7 +53,7 @@ const WhyGrowwin = () => {
     return (
         <>
             
-            <h1 className='text-5xl font-kalam font-bold text-center text-gray-600 mb-10'>Why Growwin ?</h1>
+            <h1 className='md:text-5xl text-4xl font-kalam font-bold text-center text-gray-600 mb-10'>Why Growwin ?</h1>
             <Slider {...settings}>
                 {data.map((item, index) => (
                     <CarouselCard
