@@ -40,7 +40,7 @@ function Header() {
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">Trade</a>
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">Markets</a>
                     <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-xl font-light">About Us</a>
-                    <div className='mt-4 px-4'>
+                    <div className='mt-4 px-4 w-full'>
                         <a href=""> <button className='block my-3'><img className='h-8 bg-red-100' src={appstore} alt="" /></button></a>
                         <a href=""> <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button></a>
                     </div>
@@ -87,7 +87,7 @@ function Header() {
                         <img src={appstore} className="h-8 w-8 ml-5" alt="App Store" />
                     </a> */}
                 </div>
-                <div className='md:flex gap-4 hidden w-full'>
+                <div className='md:flex gap-4 hidden'>
                     <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
                     <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
                 </div>
