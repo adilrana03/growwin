@@ -4,7 +4,6 @@ import { ClickToComponent } from 'click-to-react-component'
 
 import AuthForm from './Components/Login'
 import { Route, Routes } from 'react-router-dom'
-import { BrowserRouter } from 'react-router-dom'
 import Home from './Components/Home'
 import ComingSoonPage from './Components/ComingSoon'
 
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <div className='w-full overflow-hidden '>
-      <BrowserRouter>
         <ClickToComponent />
         <Header />
         <Routes>
@@ -20,7 +18,6 @@ function App() {
           <Route path='/comingsoon' element={<ComingSoonPage/>}/>
           <Route path='/login' element={<AuthForm />} />
         </Routes>
-      </BrowserRouter>
     </div>
 
   )
