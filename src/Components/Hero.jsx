@@ -147,7 +147,7 @@ function Hero() {
                     {/* <button className="bg-red-500 text-white px-6 py-4 mt-8 rounded-xl">Create free demo account</button> */}
                 </div>
 
-                <div className="relative lg:w-[55%]  lg:-mt-16 items-end justify-end lg:-mr-40 overflow-hidde h-[400px] p-4">
+                <div className="relative lg:w-[55%]  lg:-mt-16 items-end justify-end lg:-mr-40 overflow-hidde h-[400px] p-4 mb-10">
                     <div className="absolute left-0 w-full  lg:h-[650px] h-[400px] transform lg:-skew-x-12  -z-1 bg-red-500 rounded-2xl md:rounded-none"></div>
                     <img src={images[currentImageIndex]} alt="Dynamic Image" className="lg:w-[70%] w-[85%] rounded-lg items-center pt-10 relative z-10 " />
                 </div>

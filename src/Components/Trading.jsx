@@ -46,7 +46,7 @@ function ForexTrading() {
         }
     };
     return (
-        <div className="lg:p-8 lg:w-[80%] w-[95%] mx-auto pb-20 bg-gray-50 rounded-2xl  md:my-0 mt-28 p-[2px]">
+        <div className="lg:p-8 lg:w-[80%] w-[95%] mx-auto pb-20 bg-gray-50 rounded-2xl  md:my-0 mt-40 p-[2px]">
             <div className="md:flex lg:justify-around mb-4 md:text-2xl text-xl border-b pb-2 text-gray-400 p-4 flex overflow-scroll gap-12 font-sans font-Ubuntu">
                 <button className={selectedTab === 'Forex' ? 'text-red-500 border-b-2 border-red-500 ' : ''} onClick={() => setSelectedTab('Forex')}>
                     <div className=''>

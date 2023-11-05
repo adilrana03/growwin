@@ -87,7 +87,7 @@ function Header() {
                         <img src={appstore} className="h-8 w-8 ml-5" alt="App Store" />
                     </a> */}
                 </div>
-                <div className='md:flex gap-4 hidden'>
+                <div className='md:flex gap-4 hidden w-full'>
                     <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
                     <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
                 </div>
