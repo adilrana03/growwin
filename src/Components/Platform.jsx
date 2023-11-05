@@ -8,13 +8,11 @@ function Platforms() {
     const scrollRef = useRef(null);
 
     const platforms = [
-        // { name: 'Deriv MT5', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/d71b16a8ad2c2a1e36d554ac8e7f8a9b/0733a/platform_mt5.avif" },
+        { name: 'Deriv MT5', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/beb6883d50668199aadfbc44a8083d02/0733a/platform_deriv_go.avif" },
         { name: 'Growwin Trader', desc: 'Our legacy custumor platform', img: "https://deriv.com/static/d71b16a8ad2c2a1e36d554ac8e7f8a9b/0733a/platform_mt5.avif" },
-        { name: 'Growwin X', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/1a3f0ea53acd4c49f358d047b7f15b2a/0733a/platform_deriv_trader.avif" },
-        { name: 'Growwin Bot', desc: 'Automate your trading. No coding required.', img: "https://deriv.com/static/4dd8b21fb68f8c54e27fb8f416ccfe7c/0733a/platform_derivx.avif" },
         { name: 'SmartTrader', desc: 'Our classic bot builder and automated trading platformOur classic bot builder and automated trading platform', img: "https://deriv.com/static/4b8c994b61a757c506776cf6b1ce836c/0733a/platform_smart_trader.avif" },
         { name: 'Binary Bot', desc: 'Our classic bot builder and automated trading platform', img: "https://deriv.com/static/9d6d77d26451c60b97048b5270db2789/bbb0d/platform_deriv_ctrader.avif" },
-        { name: 'Growwin cTrader', desc: 'Trade CFD on forex, commodities, cryptocurrencies.', img: "https://deriv.com/static/609e72762ab8c943d3865a762be33904/0733a/platform_binary_bot.avif" }
+        { name: 'Growwin cTrader', desc: 'Trade CFD on forex, commodities, cryptocurrencies.', img: "https://deriv.com/static/609e72762ab8c943d3865a762be33904/0733a/platform_binary_bot.avif" },
     ];
 
     useEffect(() => {
