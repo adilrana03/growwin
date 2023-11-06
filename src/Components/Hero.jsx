@@ -85,9 +85,11 @@ function Hero() {
                         <span className="animate-blink">.</span>
                     </h1>
                     <div className=" justify-center  mt-8">
+                        <a href="/comingsoon">
                         <button className='text-2xl font-semibold bg-red-500 border p-3 ml-3  text-white md:rounded-xl rounded-3xl lg:w-[50%]  lg:mt-4 w-[90%] mx-auto md:ml-0  text-center'>
                             Create Demo account
                         </button>
+                        </a>
                         <div className='mt-4 flex justify-center gap-3 md:hidden'>
                             <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={appstore} alt="" /></button></a>
                             <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={google} alt="" /></button></a>

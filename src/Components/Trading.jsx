@@ -125,7 +125,7 @@ function ForexTrading() {
             </div>
             <a href="/comingsoon" className='text-center mx-auto'>
                 <div className='text-center'>
-
+                    
                     <button className='bg-red-500 text-white rounded-xl py-2 px-5 mx-auto '>Trade Now </button>
                 </div>
             </a>

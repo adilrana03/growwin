@@ -21,18 +21,26 @@ const SignupComponent = () => {
                     <label>I agree to the terms and conditions.</label>
                 </div> */}
                 <div className="flex justify-between mt-5 gap-2">
+                    <a href="/comingsoon">
+
                     <button className="flex items-center p-2  border  rounded-xl ">
                         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjU0NjkgMTIuMjAxM0MyMS41NDY5IDExLjUxNzkgMjEuNDg1MyAxMC44MzQ0IDIxLjM2NzYgMTAuMTYyMUgxMS45NzI3VjE0LjAxNjVIMTcuMzM5NkMxNy4xMTU1IDE1LjI0ODkgMTYuMzk4NCAxNi4zMzU4IDE1LjM1MDggMTcuMDI0OUwxOC41NzIxIDE5LjUyOTFDMjAuNDYwMSAxNy43OTI0IDIxLjU0NjkgMTUuMjM3NyAyMS41NDY5IDEyLjIwMTNaIiBmaWxsPSIjM0U4MkYxIi8+CjxwYXRoIGQ9Ik0xNS4zNDk5IDE3LjAyNDlDMTQuNDU5MiAxNy42MjQzIDEzLjMxNjMgMTcuOTc3MyAxMS45NzE4IDE3Ljk3NzNDOS4zNzIzMiAxNy45NzczIDcuMTc2MjQgMTYuMjIzOCA2LjM5MTkzIDEzLjg2NTJMMy4wNTg1OSAxNi40NDc5QzQuNzUwNDcgMTkuODE0OCA4LjIwMTQ1IDIxLjk0MzcgMTEuOTcxOCAyMS45MzgxQzE0LjY2NjQgMjEuOTM4MSAxNi45MjQxIDIxLjA0NzMgMTguNTcxMiAxOS41MjM1TDE1LjM0OTkgMTcuMDI0OVoiIGZpbGw9IiMzMkE3NTMiLz4KPHBhdGggZD0iTTYuMzkyMTYgMTAuMDc4N0wzLjA1ODgyIDcuNDk2MDlDMS42NDcwNiAxMC4zMTQgMS42NDcwNiAxMy42MzYxIDMuMDU4ODIgMTYuNDU0MUw2LjM5MjE2IDEzLjg3MTRDNS45Nzc1OSAxMi42MzkgNS45Nzc1OSAxMS4zMDU2IDYuMzkyMTYgMTAuMDc4N1oiIGZpbGw9IiNGOUJCMDAiLz4KPHBhdGggZD0iTTExLjk3MTggMkM4LjIwMTQ1IDIgNC43NTA0NyA0LjEyODg1IDMuMDU4NTkgNy40OTU4TDYuMzkxOTMgMTAuMDc4NEM3LjE3NjI0IDcuNzE5ODkgOS4zNzIzMiA1Ljk2NjM5IDExLjk3MTggNS45NjYzOUMxMy40MzM5IDUuOTY2MzkgMTQuNzUwNSA2LjQ3MDU5IDE1Ljc4MTMgNy40NTY1OEwxOC42NDQgNC41OTM4NEMxNi45MTg1IDIuOTg1OTkgMTQuNjYwOCAyIDExLjk3MTggMloiIGZpbGw9IiNFNzQxMzMiLz4KPC9zdmc+Cg==" alt="Google" className="mr-2" />
                         Google
                     </button>
+                    </a>
+                    <a href="/comingsoon">
                     <button className="flex items-center p-2 border  rounded-xl">
                         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMyAxMi4wNjcyQzIzIDUuOTU0OTYgMTguMDc1MSAxIDEyIDFDNS45MjQ4NiAxIDEgNS45NTQ5NiAxIDEyLjA2NzJDMSAxNy41OTEyIDUuMDIyNTQgMjIuMTY5NyAxMC4yODEyIDIzVjE1LjI2NjNINy40ODgyOFYxMi4wNjcySDEwLjI4MTJWOS42Mjg5OEMxMC4yODEyIDYuODU1MjUgMTEuOTIzNSA1LjMyMzEzIDE0LjQzNjEgNS4zMjMxM0MxNS42Mzk2IDUuMzIzMTMgMTYuODk4NCA1LjUzOTI5IDE2Ljg5ODQgNS41MzkyOVY4LjI2Mjg3SDE1LjUxMTRDMTQuMTQ0OSA4LjI2Mjg3IDEzLjcxODggOS4xMTU5NyAxMy43MTg4IDkuOTkxMTlWMTIuMDY3MkgxNi43Njk1TDE2LjI4MTggMTUuMjY2M0gxMy43MTg4VjIzQzE4Ljk3NzUgMjIuMTY5NyAyMyAxNy41OTEyIDIzIDEyLjA2NzJaIiBmaWxsPSIjMTg3N0YyIi8+Cjwvc3ZnPgo=" alt="Facebook" className="mr-2" />
                         Facebook
                     </button>
+                    </a>
+                    <a href="/comingsoon">
+
                     <button className="flex items-center p-2 border  rounded-xl">
                         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjI5MzkgMTIuNDczMUMxNy4yOTM5IDEwLjAxMzYgMTkuMzU2NyA4LjgyMzU1IDE5LjQzNjEgOC43NDQyMUMxOC4yNDYgNy4wNzgwOSAxNi41MDA1IDYuODQwMDggMTUuODY1OCA2Ljc2MDc0QzE0LjM1ODQgNi42MDIwNiAxMi44NTA5IDcuNjMzNDYgMTIuMTM2OSA3LjYzMzQ2QzExLjM0MzUgNy42MzM0NiAxMC4xNTM0IDYuNzYwNzQgOC44ODM5OSA2Ljc2MDc0QzcuMjE3ODggNi43NjA3NCA1LjcxMDQ0IDcuNzEyOCA0LjgzNzcxIDkuMjIwMjRDMy4wOTIyNiAxMi4yMzUxIDQuMzYxNjggMTYuNjc4MSA2LjAyNzc5IDE5LjEzNzZDNi45MDA1MiAyMC4zMjc3IDcuODUyNTkgMjEuNjc2NCA5LjEyMjAxIDIxLjU5NzFDMTAuMzkxNCAyMS41MTc4IDEwLjg2NzUgMjAuODAzNyAxMi4zNzQ5IDIwLjgwMzdDMTMuODgyMyAyMC44MDM3IDE0LjI3OSAyMS41OTcxIDE1LjYyNzggMjEuNTk3MUMxNi45NzY2IDIxLjU5NzEgMTcuODQ5MyAyMC40MDcgMTguNjQyNyAxOS4yMTY5QzE5LjU5NDcgMTcuODY4MiAxOS45OTE0IDE2LjUxOTQgMTkuOTkxNCAxNi40NDAxQzE5LjkxMjEgMTYuMzYwNyAxNy4yOTM5IDE1LjQwODcgMTcuMjkzOSAxMi40NzMxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTE0LjgzNDggNS4xNzM1NUMxNS40Njk1IDQuMzAwODMgMTUuOTQ1NSAzLjE5MDA4IDE1Ljg2NjIgMkMxNC45MTQxIDIuMDc5MzQgMTMuNjQ0NyAyLjYzNDcxIDEzLjAxIDMuNTA3NDRDMTIuMzc1MyA0LjIyMTQ5IDExLjgxOTkgNS40MTE1NyAxMS45Nzg2IDYuNTIyMzFDMTMuMDEgNi42MDE2NSAxNC4xMjA3IDUuOTY2OTQgMTQuODM0OCA1LjE3MzU1WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" alt="Apple" className="mr-2" />
                         Apple
                     </button>
+                    </a>
                 </div>
             </div>
             <div className=" md:flex flex-col justify-center items-center hidden

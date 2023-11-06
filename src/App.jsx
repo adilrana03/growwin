@@ -19,6 +19,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/comingsoon' element={<ComingSoonPage/>}/>
           <Route path='/login' element={<AuthForm />} />
+          <Route path='*' element={<ComingSoonPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
