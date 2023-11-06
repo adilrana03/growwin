@@ -1,10 +1,9 @@
 import React from 'react'
 // import logo from '../assets/logo.jpeg'
-import insta from '../assets/instagram.png'
-import facebook from '../assets/facebook.png'
+import facebook from '../assets/youtube.png'
 import twitter from '../assets/twitter.png'
 import telegram from '../assets/telegram.png'
-// tore2.png';
+import whatsapp from '../assets/whatsapp.png'
 import appstore from '../assets/app-store2.png'
 import google from '../assets/playstore2.png'
 const Footer = () => {
@@ -93,7 +92,7 @@ const Footer = () => {
 
                     {/* <!-- Social Media Icons --> */}
                     <div class="flex justify-center space-x-6 mb-4">
-                        <a href=""><img src={insta} className='h-8 w-8' alt="" /></a>
+                        {/* <a href=""><img src={insta} className='h-8 w-8' alt="" /></a> */}
                         <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={twitter} className='h-8 w-8' alt="" /></a>
                         <a href=""><img src={telegram} className='h-8 w-8' alt="" /></a>
@@ -110,8 +109,10 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            <a href="https://whatsapp.com/channel/0029Va7LxAX2P59rfxNrfg1w">
 
-
+                <img src={whatsapp} className='bg-gray-100 rounded-full p-3 w-12 md:w-16 fixed md:right-10 right-5 bottom-5' alt="" />
+            </a>
         </div>
     )
 }
