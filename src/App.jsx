@@ -1,6 +1,6 @@
 // import Hero from './Components/Hero'
 import Header from './Components/Header'
-import { ClickToComponent } from 'click-to-react-component'
+// import { ClickToComponent } from 'click-to-react-component'
 
 import AuthForm from './Components/Login'
 import { Route, Routes } from 'react-router-dom'
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='w-full overflow-hidden '>
-        <ClickToComponent />
+        {/* <ClickToComponent /> */}
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
