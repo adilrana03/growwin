@@ -196,6 +196,8 @@ function Header() {
                     <NavLink to="/comingsoon">
                         <button className='border px-2 p-1 rounded-2xl bg-red-500 text-white'>apk Download</button>
                     </NavLink>
+                    <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
+                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>                  
                 </div>
             </nav>
             
