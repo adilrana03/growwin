@@ -127,7 +127,7 @@ function ForexTrading() {
                 {/* <div className="mt-4">
                     <a href="#" className="text-red-500 ">View all &gt;</a>
                 </div> */}
-            <div className='md:h-[600px] h-[400px]  mx-auto rounded-xl md:my-10 mb-8'>
+            <div className='md:h-[600px] h-[400px]  mx-auto rounded-xl my-10 '>
 
                 <TradingViewWidget
                     symbol="NASDAQ:AAPL"
