@@ -93,13 +93,18 @@ const Footer = () => {
                     {/* <!-- Social Media Icons --> */}
                     <div class="flex justify-center space-x-6 mb-4">
                         {/* <a href=""><img src={insta} className='h-8 w-8' alt="" /></a> */}
-                        <a href="/comingsoon"><img src={facebook} className='h-8 w-8' alt="" /></a>
-                        <a href="https://twitter.com/growwincapital?t=92GPWv4QkElyd7nuiT0xmQ&s=08"><img src={twitter} className='h-8 w-8' alt="" /></a>
+                        {/* <a href="/comingsoon"><img src={facebook} className='h-8 w-8' alt="" /></a>
+                        <a href="https://twitter.com/growwincapital?t=92GPWv4QkElyd7nuiT0xmQ&s=08"><img src={twitter} className='h-8 w-8' alt="" /></a> */}
                         <a href="https://t.me/growwincapital"><img src={telegram} className='h-8 w-8' alt="" /></a>
                     </div>
                     <div className='md:flex justify-center w-[50%] mx-auto gap-4 hidden mb-5'>
+                        <a href="/comingsoon">
                         <button className=' '><img className='h-8 bg-red-100 mx-auo' src={appstore} alt="" /></button>
+                        </a>
+                        <a href="/comingsoon">
                         <button className=''><img className='h-8 bg-red-100 mx-auto' src={google} alt="" /></button>
+
+                        </a>
                     </div>
 
                     {/* <!-- Disclaimer --> */}

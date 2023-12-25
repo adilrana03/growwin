@@ -13,7 +13,7 @@ function Platforms() {
     const scrollRef = useRef(null);
 
     const platforms = [
-        { name: 'Deriv MT5', desc: 'Our classic bot builder and automated trading platform', img: trading1 },
+        { name: 'Growwin MT5', desc: 'Our classic bot builder and automated trading platform', img: trading1 },
         { name: 'Growwin Trader', desc: 'Our legacy customer platform', img: trading2 },
         { name: 'SmartTrader', desc: 'Our classic bot builder and automated trading platform', img: trading3 },
         { name: 'Binary Bot', desc: 'Our classic bot builder and automated trading platform', img: trading4 },

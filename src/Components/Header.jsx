@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import appstore from '../assets/app-store2.png';
 import google from '../assets/playstore2.png'
 import { RiArrowUpSLine } from 'react-icons/ri'
+import { Link, NavLink } from 'react-router-dom';
 import { HiMiniChevronDown } from 'react-icons/hi2'
 
 
@@ -39,7 +40,7 @@ function Header() {
         <>
             <nav className="bg-white px-4 py-4 shadow-md fixed md:flex justify-around inset-x-0 top-0 z-20">
                 <div className="flex justify-between items-center">
-                    <a href="/" className="text-red-500 text-xl font-bold">Growwin</a>
+                    <NavLink to="/" className="text-red-500 text-xl font-bold">Growwin</NavLink>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
@@ -74,7 +75,7 @@ function Header() {
                                 {isTradeDropdownOpen ? (
                                     <RiArrowUpSLine />
                                 ) : (
-                                        <HiMiniChevronDown />
+                                    <HiMiniChevronDown />
                                 )}
                             </span>
                         </button>
@@ -83,6 +84,33 @@ function Header() {
                             <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1 text-base">CFDs</a>
                             <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1 text-base">Options</a>
                             <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1 text-base">Multipliers</a>
+                        </div>
+
+
+
+                        {/* Markets Section */}
+                        <button
+                            onClick={toggleMarketsDropdown}
+                            className="text-gray-700 hover:bg-gray-200 w-full text-left flex justify-between items-center rounded-lg px-2 py-2 my-1 font-semibold"
+                        >
+                            Markets
+                            {/* Icon logic for Markets */}
+                            <span>
+                                {isMarketsDropdownOpen ? (
+                                    <RiArrowUpSLine />
+                                ) : (
+                                    <HiMiniChevronDown />
+                                )}
+                            </span>
+                        </button>
+                        <div className={`${isMarketsDropdownOpen ? 'block' : 'hidden'} bg-gray-50 rounded-lg mb-2 text-base`}>
+                            {/* Content for Markets */}
+                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Forex</a>
+                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Stocks</a>
+                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Commodities</a>
+                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Cryptocurrencies</a>
+                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Indicies</a>
+
                         </div>
 
                         {/* About Us Section */}
@@ -96,7 +124,7 @@ function Header() {
                                 {isAboutUsDropdownOpen ? (
                                     <RiArrowUpSLine />
                                 ) : (
-                                        <HiMiniChevronDown />
+                                    <HiMiniChevronDown />
                                 )}
                             </span>
                         </button>
@@ -105,28 +133,6 @@ function Header() {
                             <p className="text-gray-600 px-2 py-2 my-1 text-base">
                                 We're a team dedicated to delivering the best trading experience. Learn more about our journey, values, and the people behind our company.
                             </p>
-                        </div>
-
-                        {/* Markets Section */}
-                        <button
-                            onClick={toggleMarketsDropdown}
-                            className="text-gray-700 hover:bg-gray-200 w-full text-left flex justify-between items-center rounded-lg px-2 py-2 my-1 font-semibold"
-                        >
-                            Markets
-                            {/* Icon logic for Markets */}
-                            <span>
-                                {isMarketsDropdownOpen ? (
-                                    <RiArrowUpSLine />
-                                ) : (
-                                        <HiMiniChevronDown />
-                                )}
-                            </span>
-                        </button>
-                        <div className={`${isMarketsDropdownOpen ? 'block' : 'hidden'} bg-gray-50 rounded-lg mb-2 text-base`}>
-                            {/* Content for Markets */}
-                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Forex</a>
-                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Stocks</a>
-                            <a href="#" className="block text-gray-700 hover:bg-gray-200 rounded-lg px-2 py-2 my-1">Commodities</a>
                         </div>
 
                         {/* I  C O N S    H E  R   E */}
@@ -141,18 +147,21 @@ function Header() {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex md:items-center md:justify-center">
                     <div className="group px-5">
-                        <a href="#" className="text-gray-600 hover:text-red-500 px-3 rounded-md ">Trade</a>
+                        <NavLink href="#" className="text-gray-600 hover:text-red-500 px-3 rounded-md ">Trade</NavLink>
                         <div className="hidden group-hover:block absolute mt-1">
                             {/* Dropdown content */}
-                            <div className="bg-white shadow-lg rounded-lg p-5">
-                                <a href="#" className="hover:text-red-500 block">Forex Trading</a>
-                                <a href="#" className="hover:text-red-500 block">Commodities</a>
+                            <div className="bg-white shadow-lg rounded-lg p-5" onClick={(e) => {
+                                e.preventDefault(); // Prevent the default anchor link behavior
+                                window.scrollBy({ top: [730], behavior: 'smooth' }); // Scroll down by 10 pixels
+                            }}>
+                                <a href="#" className="hover:text-red-500 block" onClick={()=>{scrollY(+10)}}>Forex Trading</a>
+                                <a href="#" className="hover:text-red-500 block" onClick={() => {scrollBy(20, -window.innerHeight)}}>Commodities</a>
                                 <a href="#" className="hover:text-red-500 block">Stock Indices</a>
                             </div>
                         </div>
                     </div>
                     <div className="group px-5">
-                        <a href="#" className="text-gray-600 hover:text-red-500 px-3 py-2 rounded-md">Markets</a>
+                        <NavLink href="#" className="text-gray-600 hover:text-red-500 px-3 py-2 rounded-md">Markets</NavLink>
                         <div className="hidden group-hover:block absolute mt-1">
                             {/* Dropdown content */}
                             <div className="bg-white shadow-lg rounded-lg p-5">
@@ -163,7 +172,7 @@ function Header() {
                         </div>
                     </div>
                     <div className="group px-5">
-                        <a href="#" className="text-gray-600 hover:text-red-500 px-3 py-2 rounded-md">About Us</a>
+                        <NavLink href="#" className="text-gray-600 hover:text-red-500 px-3 py-2 rounded-md">About Us</NavLink>
                         <div className="hidden group-hover:block absolute mt-1">
                             {/* Dropdown content */}
                             <div className="bg-white shadow-lg rounded-lg p-5">
@@ -178,10 +187,18 @@ function Header() {
                     </a> */}
                 </div>
                 <div className='md:flex gap-4 hidden'>
-                    <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
-                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
+                    {/* <NavLink to="/comingsoon">
+                        <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
+                    </NavLink>
+                    <NavLink to="/comingsoon">
+                        <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>
+                    </NavLink> */}
+                    <NavLink to="/comingsoon">
+                        <button className='border px-2 p-1 rounded-2xl bg-red-500 text-white'>apk Download</button>
+                    </NavLink>
                 </div>
             </nav>
+            
 
             {/* Backdrop - show only when mobile menu is open */}
             {isMobileMenuOpen && (

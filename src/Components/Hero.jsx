@@ -54,6 +54,7 @@ function Hero() {
         return () => clearTimeout(typingTimer);
 
     }, [visibleText, isErasing]);
+    
     const images = [
         png11,
         png3,
@@ -78,7 +79,7 @@ function Hero() {
             <div className=" lg:flex justify-between lg:mt-16 overflow-hidde">
                 <div className="lg:w-[48%] font-sans font-ubuntu text-gray-600 text-left lg:pl-16  bg-white p-4 lg:-mt-10">
                     <h1 className="md:text-5xl text-4xl lg:leading-relaxed leading-snug mb-4 text-left font-sans font-ubuntu w-full lg:w-[60%]">
-                        Powerfull Platform,  for Forex trading  with AI </h1>
+                        Powerful Platform,  for Forex trading  with AI </h1>
                     <p className="mb-6 lg:text-2xl text-lg   font-ubuntu ">Get the widest range of markets, trades and platforms</p>
                     <h1 className="lg:text-5xl text-3xl font-bold leading-relaxed ">
                         {visibleText}
@@ -87,7 +88,8 @@ function Hero() {
                     <div className=" justify-center  mt-8">
                         <a href="/comingsoon">
                         <button className='text-2xl font-semibold bg-red-500 border p-3 ml-3  text-white md:rounded-xl rounded-3xl lg:w-[50%]  lg:mt-4 w-[90%] mx-auto md:ml-0  text-center'>
-                            Create Demo account
+                            {/* Create Demo account */}
+                            Coming Soon
                         </button>
                         </a>
                         <div className='mt-4 flex justify-center gap-3 md:hidden'>
@@ -96,9 +98,9 @@ function Hero() {
                         </div>
 
                         <div class="md:flex mt-8 space-x-10 md:ml-5 mb-4 md:w-[50%] hidden">
-                            <a href=""><img src={insta} className='h-8 w-8' alt="" /></a>
+                            {/* <a href="/comingsoon"><img src={insta} className='h-8 w-8' alt="" /></a> */}
                             {/* <a href=""><img src={facebook} className='h-8 w-8' alt="" /></a> */}
-                            <a href="https://twitter.com/growwincapital?t=92GPWv4QkElyd7nuiT0xmQ&s=08"><img src={twitter} className='h-8 w-8' alt="" /></a>
+                            {/* <a href="https://twitter.com/growwincapital?t=92GPWv4QkElyd7nuiT0xmQ&s=08"><img src={twitter} className='h-8 w-8' alt="" /></a> */}
                             {/* <a href=""><img src={apple} className='h-8 w-8' alt="" /></a> */}
                             <a href="https://t.me/growwincapital"><img src={telegram} className='h-8 w-8' alt="" /></a>
 
