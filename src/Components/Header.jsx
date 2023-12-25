@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import appstore from '../assets/app-store2.png';
 import google from '../assets/playstore2.png'
 import { RiArrowUpSLine } from 'react-icons/ri'
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import { HiMiniChevronDown } from 'react-icons/hi2'
 
 
