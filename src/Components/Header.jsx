@@ -136,10 +136,10 @@ function Header() {
                         </div>
 
                         {/* I  C O N S    H E  R   E */}
-                        <div className='block mt-3'>
+                        {/* <div className='block mt-3'>
                             <a href="" className='block ml-2 mb-2'><button><img className='w-20 ' src={appstore} alt="" /></button></a>
                             <a href="" className='block ml-2 '><button><img className='w-20 ' src={google} alt="" /></button></a>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
