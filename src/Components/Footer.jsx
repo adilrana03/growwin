@@ -97,7 +97,7 @@ const Footer = () => {
                         <a href="https://twitter.com/growwincapital?t=92GPWv4QkElyd7nuiT0xmQ&s=08"><img src={twitter} className='h-8 w-8' alt="" /></a> */}
                         <a href="https://t.me/growwincapital"><img src={telegram} className='h-8 w-8' alt="" /></a>
                     </div>
-                    <div className='md:flex justify-center w-[50%] mx-auto gap-4 hidden mb-5'>
+                    {/* <div className='md:flex justify-center w-[50%] mx-auto gap-4 hidden mb-5'>
                         <a href="/comingsoon">
                         <button className=' '><img className='h-8 bg-red-100 mx-auo' src={appstore} alt="" /></button>
                         </a>
@@ -105,7 +105,7 @@ const Footer = () => {
                         <button className=''><img className='h-8 bg-red-100 mx-auto' src={google} alt="" /></button>
 
                         </a>
-                    </div>
+                    </div> */}
 
                     {/* <!-- Disclaimer --> */}
                     <div class="text-xs text-gray-500 text-center">
@@ -114,9 +114,8 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <a href="https://whatsapp.com/channel/0029Va7LxAX2P59rfxNrfg1w">
-
-                <img src={whatsapp} className='bg-gray-100 rounded-full p-3 w-12 md:w-16 fixed md:right-10 right-5 bottom-5' alt="" />
+            <a href="https://t.me/growwincapital">
+                <img src={telegram} className='bg-gray-100 rounded-full p-3 w-12 md:w-16 fixed md:right-10 right-5 bottom-5' alt="" />
             </a>
         </div>
     )

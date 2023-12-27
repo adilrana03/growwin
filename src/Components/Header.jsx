@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import appstore from '../assets/app-store2.png';
 import google from '../assets/playstore2.png'
 import { RiArrowUpSLine } from 'react-icons/ri'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HiMiniChevronDown } from 'react-icons/hi2'
+import logo from '../assets/logo.png'
 
 
 
@@ -40,7 +41,10 @@ function Header() {
         <>
             <nav className="bg-white px-4 py-4 shadow-md fixed md:flex justify-around inset-x-0 top-0 z-20">
                 <div className="flex justify-between items-center">
-                    <NavLink to="/" className="text-red-500 text-xl font-bold">Growwin</NavLink>
+                    <div className='flex items-center'>
+                        <img src={logo} className='h-9' alt="" />
+                        <NavLink to="/" className="text-red-500 text-xl  font-bold">Growwin Capital</NavLink>
+                    </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
@@ -136,10 +140,10 @@ function Header() {
                         </div>
 
                         {/* I  C O N S    H E  R   E */}
-                        <div className='block mt-3'>
+                        {/* <div className='block mt-3'>
                             <a href="" className='block ml-2 mb-2'><button><img className='w-20 ' src={appstore} alt="" /></button></a>
                             <a href="" className='block ml-2 '><button><img className='w-20 ' src={google} alt="" /></button></a>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
@@ -154,8 +158,8 @@ function Header() {
                                 e.preventDefault(); // Prevent the default anchor link behavior
                                 window.scrollBy({ top: [730], behavior: 'smooth' }); // Scroll down by 10 pixels
                             }}>
-                                <a href="#" className="hover:text-red-500 block" onClick={()=>{scrollY(+10)}}>Forex Trading</a>
-                                <a href="#" className="hover:text-red-500 block" onClick={() => {scrollBy(20, -window.innerHeight)}}>Commodities</a>
+                                <a href="#" className="hover:text-red-500 block" onClick={() => { scrollY(+10) }}>Forex Trading</a>
+                                <a href="#" className="hover:text-red-500 block" onClick={() => { scrollBy(20, -window.innerHeight) }}>Commodities</a>
                                 <a href="#" className="hover:text-red-500 block">Stock Indices</a>
                             </div>
                         </div>
@@ -196,11 +200,11 @@ function Header() {
                     <NavLink to="/comingsoon">
                         <button className='border px-2 p-1 rounded-2xl bg-red-500 text-white'>apk Download</button>
                     </NavLink>
-                    <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
-                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>                  
+                    {/* <button className=''><img className='h-8 bg-red-100' src={appstore} alt="" /></button>
+                    <button className=''><img className='h-8 bg-red-100' src={google} alt="" /></button>                   */}
                 </div>
             </nav>
-            
+
 
             {/* Backdrop - show only when mobile menu is open */}
             {isMobileMenuOpen && (

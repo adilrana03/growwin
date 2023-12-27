@@ -92,10 +92,10 @@ function Hero() {
                             Coming Soon
                         </button>
                         </a>
-                        <div className='mt-4 flex justify-center gap-3 md:hidden'>
+                        {/* <div className='mt-4 flex justify-center gap-3 md:hidden'>
                             <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={appstore} alt="" /></button></a>
                             <a href="" className=''> <button className=''><img className='h-9 bg-red-100' src={google} alt="" /></button></a>
-                        </div>
+                        </div> */}
 
                         <div class="md:flex mt-8 space-x-10 md:ml-5 mb-4 md:w-[50%] hidden">
                             {/* <a href="/comingsoon"><img src={insta} className='h-8 w-8' alt="" /></a> */}
