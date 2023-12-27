@@ -15,7 +15,7 @@ const Footer = () => {
                     {/* <!-- Logo --> */}
                     <div class="mb-10 text-center flex justify-between gap-5 items-center">
                         <div>
-                            <h1 className='font-sans md:text-6xl text-2xl font-bold md:font-normal text-red-500'>Growwin</h1>
+                            <h1 className='font-sans md:text-5xl text-2xl font-bold md:font-normal text-red-500'>Growwin Capital</h1>
                         </div>
                         <div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
 
                     {/* <!-- Legal Info & Disclaimer --> */}
                     <div class="mb-6 text-sm text-gray-600">
-                        <p>Growwin (FX) Ltd is licensed by...</p>
+                        <p>Growwin Capital (FX) Ltd is licensed by...</p>
                         {/* <!-- ... Other paragraphs ... --> */}
                     </div>
 

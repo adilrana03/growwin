@@ -20,19 +20,19 @@ const CarouselCard = ({ icon, text }) => {
     );
 };
 
-const WhyGrowwin = () => {
+const WhyGrowwin  = () => {
     const data = [
         {
             icon: Png1,
-            text: "Growwin is at the forefront of technological innovation, pushing boundaries and shaping the future.",
+            text: "Growwin Capital  is at the forefront of technological innovation, pushing boundaries and shaping the future.",
         },
         {
             icon: Png2,
-            text: "By partnering with growwin, organizations can achieve unparalleled growth and tap into new possibilities.",
+            text: "By partnering with Growwin Capital, organizations can achieve unparalleled growth and tap into new possibilities.",
         },
         {
             icon: Png3,
-            text: "Growwin believes in community-driven initiatives. Our stakeholders have the power to guide our contributions to causes that resonate with them.",
+            text: "Growwin Capital believes in community-driven initiatives. Our stakeholders have the power to guide our contributions to causes that resonate with them.",
         },
         {
             icon: Png4,
@@ -53,7 +53,7 @@ const WhyGrowwin = () => {
     return (
         <>
             
-            <h1 className='md:text-5xl text-4xl font-kalam font-bold text-center text-gray-600 mb-10'>Why Growwin ?</h1>
+            <h1 className='md:text-5xl text-4xl font-kalam font-bold text-center text-gray-600 mb-10'>Why Growwin Capital ?</h1>
             <Slider {...settings}>
                 {data.map((item, index) => (
                     <CarouselCard
